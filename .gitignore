@@ -201,7 +201,10 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+# Workspace placeholder rules
+workspace/*
+!workspace/.gitkeep
+
+# Data folder rules
+/data/*
+!/data/.gitkeep
