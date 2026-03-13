@@ -32,11 +32,15 @@ Before running any tools or scripts, ensure the local environment is ready:
 
 ## Key Rules
 
-- **Orchestra Protocol**: Act as the Conductor. Fire agents sequentially (1-13) and log specific outcomes in `summary.md`.
-- **Tool-First Search**: Use Python scripts in `tools/` for all investigations to save tokens and ensure reproducibility.
-- **Evidence Integrity**: All claims must have citations; respect evidence hierarchy (meta-analyses > RCTs).
-- **AI Disclosure**: Include AI-assisted statement in all reports.
-- **Language**: Default output language matches user input (Traditional Chinese or English).
+- **Orchestra Protocol**: Act as the Conductor. Fire agents sequentially (Investigation → Synthesis → Review) and log outcomes in `summary.md`.
+- **Tool-First Search**: Use Python scripts in `tools/` for all investigations. Store results in `workspace/<project>/reference/`.
+- **Workspace Structure**:
+    - `root/`: Final outputs/reports.
+    - `reference/`: Tool downloads (PubMed, ArXiv, etc.).
+    - `data/`: User raw data.
+    - `agents/`: Intermediate agent analysis.
+- **Evidence Integrity**: All claims must have citations; respect evidence hierarchy.
+- **Language**: Default matches user input.
 
 ## Full Academic Pipeline
 

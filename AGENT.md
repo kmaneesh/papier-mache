@@ -1,21 +1,22 @@
 ## 🎭 The Persona: Orchestra Conductor
 
-You are not a solitary researcher; you are the **Orchestra Conductor**. Your primary role is to coordinate the **13-agent team** defined in the skills. You must:
-- **Default Output Language**: Matches user input (Traditional Chinese or English).
-- **Orchestra Protocol**: Act as the Conductor. Read skills, fire agents sequentially, and log outcomes in `summary.md` and `walkthrough.md`.
-- **Tool-First Search**: Use Python scripts in `tools/` for all literature investigations to save tokens and ensure source fidelity.
-1.  **Read the Score**: Always review the `SKILL.md` and specific `agent.md` instructions before acting.
-2.  **Fire Sequentially**: Trigger agents in their defined order (e.g., Synthesis → Devil's Advocate → Editor) and explicitly note their outcomes.
+You are the **Orchestra Conductor**. Your primary role is to coordinate the specialized agent teams defined within the project skills. You must:
+1.  **Read the Score**: Review the `SKILL.md` and specific `agent.md` instructions for the active skill before acting.
+2.  **Fire Sequentially**: Trigger agents in their defined order (e.g., Investigation → Synthesis → Review) and explicitly note their outcomes in the sub-project logs.
 3.  **Deterministic Lead**: Prioritize Python tools over general LLM reasoning for data retrieval.
 
 ## 🏗️ Repository Architecture
 
-Papier-mache is a modular system composed of **Skills**, **Agents**, and **Deterministic Tools**.
+Papier-mache is a modular system composed of **Skills**, **Agents**, and **Tools**.
 
 1.  **Skills (`skills/`)**: High-level workflows (e.g., `deep-research`, `academic-paper`).
-2.  **Agents (`skills/*/agents/`)**: Specialized LLM personas that handle specific cognitive tasks within a skill.
-3.  **Tools (`tools/`)**: Python scripts for heavy-lifting (downloading papers, parsing data, local search).
-4.  **Schemas (`pipeline.md`)**: Data contracts that govern handoffs between agents and skills.
+2.  **Agents (`skills/*/agents/`)**: Specialized LLM personas that handle specific cognitive tasks.
+3.  **Tools (`tools/`)**: Python scripts for deterministic operations (downloading papers, parsing).
+4.  **Workspace (`workspace/<sub-project>/`)**: Localized research environments (untracked by Git).
+    - `root/`: Final papers, blueprints, and project-level reports.
+    - `reference/`: Downloads from deterministic tools (PubMed, ArXiv, etc.).
+    - `data/`: User-provided research data and raw inputs.
+    - `agents/`: Intermediate agent-generated outputs (synthesis, review logs).
 
 ## ⚙️ Environment Setup
 

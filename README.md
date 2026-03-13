@@ -83,9 +83,19 @@ See the complete artifacts from a real 10-stage pipeline run — including **pee
 
 ## Key Philosophy
 
-- **Orchestra Conductor Architecture**: Papier-mache is not just a collection of prompts; it is a 10-stage orchestration of specialized agents (13 for research, 12 for writing). The AI acts as the **Conductor**, firing each agent sequentially.
-- **Tool-First Search (Deterministic)**: To save tokens and ensure academic reproducibility, all literature searches are handled by Python scripts (`tools/`) rather than stochastic web searches.
+- **Orchestra Conductor Architecture**: Papier-mache is an orchestration of specialized agent teams. The AI acts as the **Conductor**, firing agents sequentially according to the defined skill protocol.
+- **Tool-First Search (Deterministic)**: To save tokens and ensure academic reproducibility, all literature searches are handled by Python scripts (`tools/`) and stored in `workspace/reference/`.
 - **Works with Document-Focused Editors**: Designed for Codex, Claude Projects, and other non-code-centric environments.
+
+## Project Structure
+
+- `skills/`: The "Scores" — Multi-agent pipeline definitions.
+- `tools/`: The "Instruments" — Deterministic Python scripts.
+- `workspace/<project>/`: The "Performance" — Sub-project environment.
+    - `reference/`: Raw paper downloads (Untracked by Git).
+    - `data/`: User research data (Untracked by Git).
+    - `agents/`: AI-generated reports and synthesis (Untracked by Git).
+    - `root/`: Final manuscripts and blueprints.
 
 
 ## Installation and Use
