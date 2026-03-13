@@ -111,23 +111,23 @@ No coding or API setup is required. All features are accessible through the edit
 ```
 # Start a full research pipeline
 You: "I want to write a research paper on AI's impact on higher education QA"
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 
 # Start with Socratic guidance
 You: "Guide my research on AI in educational evaluation"
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 
 # Write a paper with guided planning
 You: "Guide me through writing a paper on demographic decline"
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 
 # Review an existing paper
 You: "Review this paper" (then provide the paper)
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 
 # Check pipeline status
 You: "status"
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 ```
 
 ### Individual Skills
@@ -135,65 +135,51 @@ Ask me questions one by one to clarify my intent and expand the context, Give me
 #### Deep Research (7 modes)
 ```
 "Research the impact of AI on higher education"       → full mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Give me a quick brief on X"                          → quick mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Do a systematic review on X with PRISMA"             → systematic-review mode (new)
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Guide my research on X"                              → socratic mode (guided)
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Fact-check these claims"                             → fact-check mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Do a literature review on X"                         → lit-review mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Review this paper's research quality"                → review mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 ```
 
 #### Academic Paper (9 modes)
 ```
 "Write a paper on X"                                  → full mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Guide me through writing a paper"                    → plan mode (guided)
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "I have a draft, here are reviewer comments"          → revision mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
+
 "Parse these reviewer comments into a roadmap"        → revision-coach mode (new)
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Convert to LaTeX" / "Convert citations to IEEE"      → format-convert mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Check citations"                                     → citation-check mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Write a bilingual abstract"                          → bilingual-abstract mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Polish my writing style"                             → writing-polish mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Write the full paper autonomously"                   → full-auto mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 ```
 
 #### Academic Paper Reviewer (5 modes)
 ```
 "Review this paper"                                   → full mode (EIC + R1/R2/R3 + Devil's Advocate)
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Quick assessment of this paper"                      → quick mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Guide me to improve this paper"                      → guided mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Check the methodology"                               → methodology-focus mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "Verify the revisions"                                → re-review mode
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 ```
 
 #### Academic Pipeline (Orchestrator)
 ```
 "I want to write a complete research paper"           → full pipeline from Stage 1
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "I already have a paper, review it"                   → mid-entry at Stage 2.5 (integrity first)
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 "I received reviewer comments"                        → mid-entry at Stage 4
-Ask me questions one by one to clarify my intent and expand the context, Give me researched choices
 ```
 > Pipeline ends with **Stage 6: Process Summary** — auto-generates a paper creation process record with 6-dimension Collaboration Quality Evaluation (1–100 scoring).
 

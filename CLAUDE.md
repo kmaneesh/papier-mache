@@ -23,6 +23,13 @@ A suite of Claude Code skills for rigorous academic research, paper writing, pee
 
 5. **academic-paper-reviewer guided vs full**: guided = Socratic review that engages the author in dialogue about issues. full = standard multi-perspective review report. When the user wants to learn from the review, suggest guided mode.
 
+## ⚙️ Environment Setup
+
+Before running any tools or scripts, ensure the local environment is ready:
+- **Virtual Environment**: Use `.venv` in the project root.
+- **Initialization**: If `.venv` is absent, run: `python3.11 -m venv .venv && ./.venv/bin/pip install -r requirements.txt`
+- **Execution**: Always prefix python commands with `./.venv/bin/python3`.
+
 ## Key Rules
 
 - All claims must have citations

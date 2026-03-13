@@ -11,15 +11,23 @@ Papier-mache is a modular system composed of **Skills**, **Agents**, and **Deter
 3.  **Tools (`tools/`)**: Python scripts for heavy-lifting (downloading papers, parsing data, local search).
 4.  **Schemas (`pipeline.md`)**: Data contracts that govern handoffs between agents and skills.
 
+## ⚙️ Environment Setup
+
+To ensure deterministic execution, always use the project's virtual environment. If `.venv` is missing, create it using Python 3.11:
+
+```bash
+python3.11 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+```
+
 ## 🛠️ Tool Usage Protocol
 
-Agents should prioritize using scripts in `tools/` for data retrieval to minimize token consumption and increase deterministic accuracy.
+Agents should prioritize using scripts in `tools/` for data retrieval. Always invoke tools using the project virtual environment:
 
 | Tool | Purpose | Usage Command |
 | :--- | :--- | :--- |
-| `download_arxiv.py` | Search & download from arXiv | `python tools/download_arxiv.py --query "..."` |
-| `download_pubmed.py` | Search & download from PubMed | `python tools/download_pubmed.py --query "..."` |
-| `download_openalex.py` | Search & download from OpenAlex| `python tools/download_openalex.py --query "..."` |
+| `download_arxiv.py` | Search & download from arXiv | `./.venv/bin/python3 tools/download_arxiv.py --query "..."` |
+| `download_pubmed.py` | Search & download from PubMed | `./.venv/bin/python3 tools/download_pubmed.py --query "..."` |
+| `download_openalex.py` | Search & download from OpenAlex| `./.venv/bin/python3 tools/download_openalex.py --query "..."` |
 
 **Agent Rule**: When performing literature searches (`bibliography_agent`), always check if these tools can be used before attempting multi-turn web searches.
 
