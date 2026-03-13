@@ -205,6 +205,12 @@ cython_debug/
 workspace/*
 !workspace/.gitkeep
 !workspace/alport_syndrome/
+workspace/**/*.txt
+workspace/**/*.log
+workspace/**/*.bak
+workspace/**/.DS_Store
+workspace/**/__pycache__/
+workspace/**/*.pyc
 
 # Data folder rules
 /data/*
