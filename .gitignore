@@ -204,6 +204,7 @@ cython_debug/
 # Workspace placeholder rules
 workspace/*
 !workspace/.gitkeep
+!workspace/alport_syndrome/
 
 # Data folder rules
 /data/*
