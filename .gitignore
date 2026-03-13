@@ -202,15 +202,7 @@ cython_debug/
 .cursorindexingignore
 
 # Workspace placeholder rules
-workspace/*
-!workspace/.gitkeep
-!workspace/alport_syndrome/
-workspace/**/*.txt
-workspace/**/*.log
-workspace/**/*.bak
-workspace/**/.DS_Store
-workspace/**/__pycache__/
-workspace/**/*.pyc
+workspace/
 
 # Data folder rules
 /data/*

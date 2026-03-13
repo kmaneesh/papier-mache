@@ -1,9 +1,0 @@
-# AMAP-APP: Efficient Segmentation and Morphometry Quantification of Fluorescent Microscopy Images of Podocytes
-
-**arXiv ID**: [2602.10663v2](http://arxiv.org/abs/2602.10663v2)
-**Authors**: Arash Fatehi, David Unnersjö-Jess, Linus Butt, Noémie Moreau, Thomas Benzing, Katarzyna Bozek
-**Published**: 2026-02-11T09:07:03Z
-**PDF Link**: [https://arxiv.org/pdf/2602.10663v2](https://arxiv.org/pdf/2602.10663v2)
-
-## Abstract
-Background: Automated podocyte foot process quantification is vital for kidney research, but the established "Automatic Morphological Analysis of Podocytes" (AMAP) method is hindered by high computational demands, a lack of a user interface, and Linux dependency. We developed AMAP-APP, a cross-platform desktop application designed to overcome these barriers.   Methods: AMAP-APP optimizes efficiency by replacing intensive instance segmentation with classic image processing while retaining the original semantic segmentation model. It introduces a refined Region of Interest (ROI) algorithm to improve precision. Validation involved 365 mouse and human images (STED and confocal), benchmarking performance against the original AMAP via Pearson correlation and Two One-Sided T-tests (TOST).   Results: AMAP-APP achieved a 147-fold increase in processing speed on consumer hardware. Morphometric outputs (area, perimeter, circularity, and slit diaphragm density) showed high correlation (r>0.90) and statistical equivalence (TOST P<0.05) to the original method. Additionally, the new ROI algorithm demonstrated superior accuracy compared to the original, showing reduced deviation from manual delineations.   Conclusion: AMAP-APP democratizes deep learning-based podocyte morphometry. By eliminating the need for high-performance computing clusters and providing a user-friendly interface for Windows, macOS, and Linux, it enables widespread adoption in nephrology research and potential clinical diagnostics.
