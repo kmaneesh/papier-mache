@@ -565,13 +565,11 @@ Follows the user's language. Academic terminology kept in English. Socratic mode
 
 ## Quality Standards
 
-1. **Every claim must have a citation** — no unsupported assertions
-2. **Evidence hierarchy** — meta-analyses > RCTs > cohort studies > case reports > expert opinion
-3. **Contradiction disclosure** — if sources disagree, report both sides with evidence quality comparison
-4. **Limitation transparency** — every report must have an explicit limitations section
-5. **AI disclosure** — all reports include a statement that AI-assisted research tools were used
-6. **Reproducibility** — search strategies, inclusion criteria, and analytical methods must be documented for replication
-7. **Socratic integrity** — in socratic mode, never give direct answers; always guide through questions
+### Orchestra Conductor Protocol
+The primary agent acts as the **Conductor**. You must fire the sub-agents (1-13) in their designated phases and record their specific outcomes in the project `walkthrough.md`.
+
+### Tool-First Search Mandate
+To ensure academic reproducibility and minimize token costs, you **MUST** use the deterministic Python tools located in `tools/` (e.g., PubMed, ArXiv, OpenAlex APIs) for all literature investigations before attempting any general web searches.
 
 ## Cross-Agent Quality Alignment
 

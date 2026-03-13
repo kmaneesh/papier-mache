@@ -1,4 +1,4 @@
-# Academic Research Skills for Claude Code
+# Academic Research Skills for Agents
 
 Papier-mache is a comprehensive suite of Skills and Tools for academic research, paper writing, peer review, and orchestration. It is designed to work with Codex and other editors that are not code-centric, making it accessible for users who prefer a more document-focused workflow. 
 
@@ -81,12 +81,11 @@ See the complete artifacts from a real 10-stage pipeline run — including **pee
 4. Use academic-pipeline to orchestrate the full process if desired.
 5. For large or complex tasks, delegate to Python tools via the editor interface.
 
-## Key Features
+## Key Philosophy
 
-- Works with Codex and non-code-focused editors
-- Modular skills for research, writing, review, and orchestration
-- Custom tools for downloading papers and managing materials
-- Deterministic Python delegation for large tasks
+- **Orchestra Conductor Architecture**: Papier-mache is not just a collection of prompts; it is a 10-stage orchestration of specialized agents (13 for research, 12 for writing). The AI acts as the **Conductor**, firing each agent sequentially.
+- **Tool-First Search (Deterministic)**: To save tokens and ensure academic reproducibility, all literature searches are handled by Python scripts (`tools/`) rather than stochastic web searches.
+- **Works with Document-Focused Editors**: Designed for Codex, Claude Projects, and other non-code-centric environments.
 
 
 ## Installation and Use
